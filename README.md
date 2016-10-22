@@ -23,6 +23,7 @@ column10 : date of birth.
 
 
 Folder: bigdata1
+
 A MapReduce program in Hadoop that implements a simple “Mutual/Common friend list of two friends". The key idea is that if two people are friend then they have a lot of mutual/common friends. This program will find the common/mutual friend list for them.
 
 For example,
@@ -39,11 +40,13 @@ Output: The output should contain one line per user in the following format:
 where <User_A> & <User_B> are unique IDs corresponding to a user A and B (A and B are friend). < Mutual/Common Friend List > is a comma-separated list of unique IDs corresponding to mutual friend list of User A and B.
 
 Folder: bigdata2
+
 Any two Users (they are friend) as input, output the list of the user id of their mutual friends.
 Output format:
 UserA, UserB list userid of their mutual Friends.
 
 Folder:bigdata3
+
 Use in-memory join 
 Given any two Users (they are friend) as input, output the list of the names and the date of birth (mm/dd/yyyy) of their mutual friends.
 Note: use the userdata.txt to get the extra user information.
@@ -56,7 +59,6 @@ Sample Output:
 Folder: bigdata4
 
 Reduce-side join and job chaining:
-
 Step 1: Calculate the maximum age of the direct friends of each user.
 Step 2: Sort the users by the calculated maximum age from step 1 in descending order.
 Step 3. Output the top 10 users from step 2 with their address and the calculated maximum age.
